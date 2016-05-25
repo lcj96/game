@@ -1,49 +1,39 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style>
+.kuang{
+	width:500px;
+	height:100px;
+	margin:0 auto;
+	margin-top:200px;
+	background-color:red;
+	text-align: center;
+	font-size:40px;
+	line-height:100px;
+	color:#FF0; }
+.kuang span{
+	display: none;
+}
+.kuang:hover span{
+	display: block;
+}
 
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=8" />
-		<title></title>
-		<link href="css/cs.css"rel="stylesheet" type="text/css" />
-		<script type="text/javascript" src="js/jq.js"></script>
-		<script type="text/javascript" src="js/js.js"></script>
-	</head>
+</style>
 
-	<body>
-<div class="nav">
-	<button id="stop" class="hidden" onclick="Stop()">结束游戏</button>
+</head>
+
+<body>
+
+<div class="kuang">
+
+<span>sb一样</span>
+
 </div>
-		<div class="div"></div>
 
-		<div id="canvas" class="canvas" onmousemove="playerMove(event)">
-			<ul class="areaA hidden">
-				<li>得分：</li>
-				<li id="getcounts">0</li>
-			</ul>
-			<ul class="areaB hidden">
-				<li>时间：</li>
-				<li id="time">60</li>
-			</ul>
 
-			<div id="x0" class="x0 hidden" onmouseenter="getCounts()" onmouseover="die0()"></div>
-			<div id="x1" class="x1 hidden" onmouseenter="getCounts()" onmouseover="die1()"></div>
-			<div id="x2" class="x2 hidden" onmouseenter="getCounts()" onmouseover="die2()"></div>
-			<div id="x3" class="x3 hidden" onmouseenter="getCounts()" onmouseover="die3()"></div>
-			<div id="x4" class="x4 hidden" onmouseenter="getCounts()" onmouseover="die4()"></div>
-			<div id="x5" class="x5 hidden" onmouseenter="getCounts()" onmouseover="die5()"></div>
-			<div id="x6" class="x6 hidden" onmouseenter="getCounts()" onmouseover="die6()"></div>
-			<div id="x7" class="x7 hidden" onmouseenter="getCounts()" onmouseover="die7()"></div>
-			<div id="x8" class="x8 hidden" onmouseenter="getCounts()" onmouseover="die8()"></div>
 
-			<center>
-				<button id="start" onclick="Start()">开始游戏</button>
-			</center>
-			<div id="player"></div>
-
-			
-		</div>
-
-	</body>
-
+</body>
 </html>
